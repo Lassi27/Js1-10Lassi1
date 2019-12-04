@@ -1,11 +1,24 @@
 //write first method
 function sleep_in(weekday,vacation) {
-    return weekday;
+    if(weekday == false){
+        return true;
+    }
+    if(vacation == true){
+        return true;
+    }
+    return false;
 }
 
 //write second method
-function monkey_trouble(param1, param2) {
-    return param1;
+function monkey_trouble(a, b) {
+    if ((a == true) && ( b == true)){
+        return true;
+    }
+
+    if ((a == false) && ( b == false)){
+        return true;
+    }
+    return false;
 }
 
 //add 2-10 below here...
@@ -151,8 +164,6 @@ function loneSum(a, b, c){
 
 
 
-
-
 //We are having a party with amounts of tea
 // and candy. Return the int outcome of the party encoded as
 // 0=bad, 1=good, or 2=great. A party is good (1) if both tea and candy are
@@ -178,5 +189,4 @@ function tester() {
     document.getElementById("output").innerHTML += blackjack(true, false);
     document.getElementById("output").innerHTML += loneSum(true, false);
 
-}
 
